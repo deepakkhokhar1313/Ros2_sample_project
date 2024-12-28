@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>visualizer</name>
+  <version>0.0.0</version>
+  <description>Ros2 Package for visualizing purpopses.</description>
+  <maintainer email="deepakkhokhar1313@gmail.com">deepak</maintainer>
+  <license>Apache License 2.0</license>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+   <depend>rclpy</depend>
+  <depend>rviz2</depend>
+  <depend>sensor_msgs</depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
+
+
+
+
+<!-- i want to make an robotics project.
+project goal is to make an 6dof of robotics arm in genesis , simulate it in genesis, control it using ros2, visualize it using genesis or reviz
+I have made ros2 packages
+
+my project structure is
+my_robot_ws/
+├── src/
+│ ├── arm_controller/
+│ │ ├── arm_controller/
+│ │ │ ├── arm_controller.py
+│ │ ├── setup.py
+│ │ └── package.xml
+│ ├── arm_genesis_simulation/
+│ │ ├── meshes/
+│ │ │ └── 6dof_arm_link_*.obj # .obj models of the arm parts
+│ │ ├── urdf/
+│ │ │ └── 6dof_arm.urdf
+│ │ ├── launch/
+│ │ │ └── genesis_simulation.launch.py
+│ │ ├── arm_genesis_simulation/
+│ │ │ └── genesis_bridge.py
+│ │ ├── setup.py
+│ │ └── package.xml
+│ ├── launcher/
+│ │ ├── launcher/
+│ │ │ └── master_launcher.launch.py
+│ │ ├── setup.py
+│ │ └── package.xml
+│ ├── visualizer/
+│ │ ├── visualizer/
+│ │ │ └── visualizer.py
+│ │ ├── setup.py
+│ │ └── package.xml
+ros2 launch launcher master_launcher.launch.py
+
+
+use python as programing languages
+give me best and most optimized code for each file separately
+even explain the code line by line -->
